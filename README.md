@@ -7,7 +7,7 @@ Landing page com tema de filmes e séries feito por [João Pedro Monção](https
 
 ## 🚀Demo
 
-![Demo da landing page](demo.jpeg)
+![Demo da landing page](demo.jpg)
 
 
 ## ⏩Executando
