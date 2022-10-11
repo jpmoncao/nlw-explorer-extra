@@ -16,7 +16,7 @@ Landing page com tema de filmes e séries feito por [João Pedro Monção](https
 
 ## 🎈Projeto principal
 Recomendo dar uma olhada em um projeto semelhante da maratona!
- - [Landing page tema E-sports](https://github.com/jpmoncao/nlw-esports) 
+ - [Landing page tema E-sports](https://github.com/jpmoncao/nlw-explorer) 
 
 ## ✔️Melhorias
 Sistema CRUD de contas via github, mais interatividade e etc
