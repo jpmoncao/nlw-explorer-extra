@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url(../img/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+header {
+    margin-top: 32px;
+    height: calc(120px + 32px);
+}
+
+header div {
+    margin: auto;
+
+    width: 120px;
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+    padding: 4px;
+    border-radius: 50%;
+
+    display: flex;
+    transition: transform .3s;
+}
+
+header div:hover {
+    transform: scale(1.1);
+}
+
+header img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+main {
+    max-width: 520px;
+    width: 90%;
+
+    margin: 32px auto;
+
+    display: grid;
+    gap: 24px;
+}
+
+main section {
+    background: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+    padding-top: 4px;
+    border-radius: 12px;
+}
+
+main section div {
+    width: 100%;
+    background: #262629;
+    border-radius: 8px;
+
+    padding: 32px;
+    padding-top: 24px;
+}
+
+main section ul {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+main section ul li {
+    transition: transform .5s;
+}
+
+main section ul li:hover {
+    transform: translateY(-5px);
+}
+
+main section img {
+    width: 100px;
+    border-radius: 16px;
+}
+
+main section h2 {
+    line-height: 160%;
+}
+
+main section p {
+    line-height: 160%;
+    letter-spacing: -0.18px;
+    color: #C1C1C1;
+}
+
+/* ANIMATION */
+
+main section{
+    animation-name: toLeft;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
+main section:nth-child(2) {
+    animation-name: toLeft;
+    animation-duration: 1s;
+    animation-delay: .3s;
+    animation-fill-mode: backwards;
+}
+
+main section:nth-child(3) {
+    animation-name: toLeft;
+    animation-duration: 1s;
+    animation-delay: .6s;
+    animation-fill-mode: backwards;
+}
+
+header {
+    animation-name: scaleUp;
+    animation-duration: .3s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes toLeft {
+    from {
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
